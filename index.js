@@ -1,3 +1,7 @@
+import React from "react"
+import ReactDOM from "react-dom/client"
+
+
 //This is an declarative way to program
  //ReactDOM.render( <h1 className="header" >Hello, Ract!</h1>,     document.getElementById("root"))  
 
@@ -21,8 +25,5 @@ const navbar = (
     
 )
 
-ReactDOM.render(
-    navbar,
-    document.getElementById("root")
-    
-)
+ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+ 
