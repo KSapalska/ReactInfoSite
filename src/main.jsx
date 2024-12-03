@@ -1,3 +1,18 @@
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <main>
+    <img src="src/assets/react-logo.png" />
+    <h1>This is another element</h1>
+    
+    </main>
+  
+) 
+
 /*import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -9,9 +24,11 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 ) */
 
-
+/* 
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+
   const navbar = (
     <nav>
         <h1>Brand name</h1>
@@ -23,4 +40,12 @@ import ReactDOM from "react-dom/client";
     </nav>
 );
 
-ReactDOM.createRoot(document.getElementById("root")).render(navbar);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+
+root.render(
+    <h1>Hello from React!</h1>
+) */
+
+
+//ReactDOM.createRoot(document.getElementById("root")).render(navbar);
