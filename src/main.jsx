@@ -8,10 +8,6 @@ import Footer from "./Footer.jsx";
 
 const root = createRoot(document.getElementById("root"));
 
-
-
-
-
 function Page() {
   return (
     <>
@@ -23,4 +19,3 @@ function Page() {
 }
 
 root.render(<Page />);
-
