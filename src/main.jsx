@@ -1,14 +1,21 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import "./index.css";
+//import "./index.css";
 
 const root = createRoot(document.getElementById("root"));
 
 function Header() {
   return (
-    <header>
-      <img src="src/assets/react-logo.png" alt="React logo" />
+    <header className="header">
+      <img className="logo" src="src/assets/react-logo.png" alt="React logo" />
+      <nav>
+        <ul className="nav-list">
+          <li>Pricing</li>  
+          <li>About</li>  
+          <li>Contact</li>  
+        </ul>
+      </nav>
     </header>
   );
 }
@@ -29,9 +36,10 @@ function MainContent() {
 }
 
 function Footer() {
-  <footer>
+  return (
+  <footer className="footer">
     <small>© 2024 Sapalska development. All rights reserved.</small>
-  </footer>;
+  </footer>)
 }
 
 function Page() {
