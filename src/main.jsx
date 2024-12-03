@@ -1,13 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import {createRoot} from "react-dom/client";
+//import { Fragment } from "react";
+
 import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
 root.render(<Page />);
 
 function Page() {
   return (
-    <div>
+    //<Fragment>
+    <>
       <header>
         <img src="src/assets/react-logo.png" alt="React logo" />
       </header>
@@ -26,7 +29,8 @@ function Page() {
       <footer>
         <small>© 2024 Sapalska development. All rights reserved.</small>
      </footer>
+        </>
 
-    </div>
+    //</Fragment>
   );
 }
